@@ -1,0 +1,97 @@
+:root {
+  /* general */
+  --fontFamily-main: 'Lato', sans-serif;
+  --fontFamily-accent: 'Luckiest Guy', cursive;
+  --letterSpacing01: 0.1em;
+  --letterSpacing02: 0.2em;
+  --radius: 15px;
+  --transition02: all 0.2s ease-in-out;
+  --transition05: all 0.5s ease-in-out;
+  --transition10: all 1s ease-in-out;
+  --fixedWidth: 450px;
+  --maxWidth: 1170px;
+  /* colors */
+  --clr-redDark: #cc0000;
+  --clr-redLight: #ff3333;
+  --clr-greenDark: #1f9900;
+  --clr-greenLight: #5cff33;
+  /* color primary */
+  --clr-prim-1: #e6e6ff;
+  --clr-prim-2: #ccccff;
+  --clr-prim-3: #b3b3ff;
+  --clr-prim-4: #9999ff;
+  --clr-prim-5: #8080ff;
+  --clr-prim-6: #6666cc;
+  --clr-prim-7: #4d4d99;
+  --clr-prim-8: #333366;
+  --clr-prim-9: #1a1a33;
+  /* color grey */
+  --clr-white: #fcfcfc;
+  --clr-grey-1: #e6e6e6;
+  --clr-grey-2: #d9d9d9;
+  --clr-grey-3: #cdcdcd;
+  --clr-grey-4: #c0c0c0;
+  --clr-grey-5: #9a9a9a;
+  --clr-grey-6: #737373;
+  --clr-grey-7: #4d4d4d;
+  --clr-black: #222222;
+  /* shadow */
+  --shadow-dark: 0px 5px 10px var(--clr-black), -5px 5px 10px var(--clr-black);
+  --shadow-light: 0px 5px 7px var(--clr-grey-4), -5px 5px 7px var(--clr-grey-4);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project-box {
+  background-color: var(--clr-prim-6);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.project-title {
+  color: var(--clr-prim-1);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+.project-box img {
+  border-radius: var(--radius);
+}
+
+.projects-lang {
+  list-style-image: url('../plugins/imgs/arrow.png');
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing01);
+  margin-bottom: 2rem;
+  color: var(--clr-prim-1);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    color: var(--clr-redLight);
+    text-shadow: var(--shadow-dark);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 800px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
