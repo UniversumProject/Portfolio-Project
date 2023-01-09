@@ -1,0 +1,74 @@
+:root {
+    /* general */
+    --fontFamily-main: 'Lato', sans-serif;
+    --fontFamily-accent: 'Luckiest Guy', cursive;
+    --letterSpacing01: 0.1em;
+    --letterSpacing02: 0.2em;
+    --radius: 15px;
+    --transition02: all 0.2s ease-in-out;
+    --transition05: all 0.5s ease-in-out;
+    --transition10: all 1s ease-in-out;
+    --fixedWidth: 450px;
+    --maxWidth: 1170px;
+    /* colors */
+    --clr-redDark: #cc0000;
+    --clr-redLight: #ff3333;
+    --clr-greenDark: #1f9900;
+    --clr-greenLight: #5cff33;
+    /* color primary */
+    --clr-prim-1: #e6e6ff;
+    --clr-prim-2: #ccccff;
+    --clr-prim-3: #b3b3ff;
+    --clr-prim-4: #9999ff;
+    --clr-prim-5: #8080ff;
+    --clr-prim-6: #6666cc;
+    --clr-prim-7: #4d4d99;
+    --clr-prim-8: #333366;
+    --clr-prim-9: #1a1a33;
+    /* color grey */
+    --clr-white: #fcfcfc;
+    --clr-grey-1: #e6e6e6;
+    --clr-grey-2: #d9d9d9;
+    --clr-grey-3: #cdcdcd;
+    --clr-grey-4: #c0c0c0;
+    --clr-grey-5: #9a9a9a;
+    --clr-grey-6: #737373;
+    --clr-grey-7: #4d4d4d;
+    --clr-black: #222222;
+    /* shadow */
+    --shadow-dark: 0px 5px 10px var(--clr-black), -5px 5px 10px var(--clr-black);
+    --shadow-light: 0px 5px 7px var(--clr-grey-4), -5px 5px 7px var(--clr-grey-4);
+}
+
+.profile-img { 
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 60px;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding-bottom: 60px;
+
+}
+
+.client-list {
+    padding-bottom: 60px;
+
+}
+
+.client-list li { 
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 4px solid var(--clr-prim-4); 
+
+
+}
+
+  

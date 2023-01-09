@@ -518,6 +518,55 @@ contact-center
   color: var(--clr-grey-7);
   font-size: 1.1rem;
 }
+.section-personal-info {
+  text-align: center;
+}
+.section-personal-info address {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+.section-faq h3 {
+  text-align: center;
+
+}
+.accordion {
+  padding: 0 24px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-link {
+  display: block;
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+
+.accordion-content {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+
+.accordion-item.open .accordion-link {
+  color: #444;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 500px;
+}
 
 /* 
 footer
