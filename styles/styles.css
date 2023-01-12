@@ -110,6 +110,10 @@ a {
   text-decoration: none;
   letter-spacing: var(--letterSpacing01);
 }
+a:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--clr-greenDark);
+}
 mark {
   background-color: var(--clr-prim-7);
   color: var(--clr-white);
@@ -128,6 +132,10 @@ th {
 }
 button {
   cursor: pointer;
+}
+button:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid var(--clr-greenDark);
 }
 img {
   width: 100%;
@@ -539,6 +547,10 @@ contact-center
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
+  list-style-type: disc;
+}
+.accordion li::marker {
+  color: var(--clr-prim-5);
 }
 
 .accordion-item {
@@ -550,8 +562,10 @@ contact-center
   display: block;
   padding: 16px;
   cursor: pointer;
-  font-weight: 700;
+  font-size: 1.2rem;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
   transition: all 0.2s ease;
 }
 

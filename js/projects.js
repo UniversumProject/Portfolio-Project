@@ -17,7 +17,7 @@ const projects = [
     id: 'project03',
     name: 'Backroad Tour',
     url: 'https://backroadtourcompanyhaki.netlify.app',
-    languages: ['react js'],
+    languages: ['html', 'css', 'javascript'],
     imgPath: './plugins/projectImages/project003.png',
   },
   {

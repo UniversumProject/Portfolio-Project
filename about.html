@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haki Bejtullahi</title>
+    <title>John Doe | About</title>
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -36,12 +36,13 @@
     <!-- main styles css -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/about.css" />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <div class="nav-top">
-          <a href="index.html">
+          <a href="index.html" id="mainPage">
             <img
               src="./plugins/logo/mylogo.svg"
               alt="logo"
@@ -54,16 +55,20 @@
         </div>
         <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" id="mainPageNav" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" id="aboutPageNav" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" id="projectsPageNav" href="projects.html"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" id="contactsPageNav" href="contact.html"
+              >Contact</a
+            >
           </li>
           <li class="nav-item-bottom">
             <ul class="nav-footer">
@@ -72,6 +77,7 @@
                   href="https://www.facebook.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="facebookLinkNav"
                 >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -81,6 +87,7 @@
                   href="https://www.linkedin.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="linkedInLinkNav"
                 >
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -90,6 +97,7 @@
                   href="https://github.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="githubLinkNav"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
@@ -99,20 +107,31 @@
         </ul>
       </nav>
     </header>
+
     <section class="section-center">
       <div class="profile-img">
         <img src="./plugins/bannerimg.jpg" alt="banner img" />
       </div>
       <div class="profile-info">
-        <h2>Hi my name is John Doe </h2>
-        <p>I'm a web developer with in-depth experience in UI/UX design. In a nutshell, I create websites that help organizations address business challenges and meet their needs. I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps, and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I’m a lifelong learner (currently taking a course on building AI chatbots with Python!) and love to read, run, and find new bubble tea shops in New York City.</p>
+        <h2>Hi my name is John Doe</h2>
+        <p>
+          I'm a web developer with in-depth experience in UI/UX design. In a
+          nutshell, I create websites that help organizations address business
+          challenges and meet their needs. I manage everything from website
+          navigation and layout to a company's web hosting and security
+          architecture. My expertise lies within front-end web apps, and the
+          main languages in my tech stack are JavaScript, React, and of course
+          HTML/CSS. I’m a lifelong learner (currently taking a course on
+          building AI chatbots with Python!) and love to read, run, and find new
+          bubble tea shops in New York City.
+        </p>
       </div>
     </section>
 
     <section class="section-center">
       <h2>“First, solve the problem. Then, write the code.” – John Johnson</h2>
     </section>
-    
+
     <section class="about-center section-center">
       <h2 class="section-title">Skills</h2>
       <h3>Programming <mark>Languages</mark> / <mark>Frameworks</mark></h3>
@@ -146,7 +165,9 @@
           </tr>
         </table>
       </div>
-      <a href="projects.html" class="btn">View my Projects</a>
+      <a href="projects.html" id="projectsPageBtn" class="btn"
+        >View my Projects</a
+      >
     </section>
 
     <section class="section-center">
@@ -165,6 +186,7 @@
             href="https://www.facebook.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="facebookLinkFooter"
           >
             <i class="fa-brands fa-facebook"></i>
           </a>
@@ -174,6 +196,7 @@
             href="https://www.linkedin.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="linkedInLinkFooter"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -183,6 +206,7 @@
             href="https://github.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="githubLinkFooter"
           >
             <i class="fa-brands fa-github"></i>
           </a>
@@ -192,6 +216,5 @@
         Copyright &copy; John Doe 2023. All rights reserved.
       </p>
     </footer>
-    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

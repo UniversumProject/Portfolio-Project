@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haki Bejtullahi</title>
+    <title>John Doe | Contact</title>
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -40,7 +40,7 @@
     <header class="header">
       <nav class="nav">
         <div class="nav-top">
-          <a href="index.html">
+          <a href="index.html" id="mainPage">
             <img
               src="./plugins/logo/mylogo.svg"
               alt="logo"
@@ -53,16 +53,20 @@
         </div>
         <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" id="mainPageNav" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" id="aboutPageNav" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" id="projectsPageNav" href="projects.html"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" id="contactsPageNav" href="contact.html"
+              >Contact</a
+            >
           </li>
           <li class="nav-item-bottom">
             <ul class="nav-footer">
@@ -71,6 +75,7 @@
                   href="https://www.facebook.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="facebookLinkNav"
                 >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -80,6 +85,7 @@
                   href="https://www.linkedin.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="linkedInLinkNav"
                 >
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -89,6 +95,7 @@
                   href="https://github.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="githubLinkNav"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
@@ -103,9 +110,20 @@
       <h2>contact <span>me</span></h2>
       <div class="form-container">
         <form class="contact-form" id="contact-form">
+          <label for="inputFirstName">Your First Name</label>
           <input id="inputFirstName" type="text" placeholder="first name" />
+          <label for="inputLastName">Your Last Name</label>
           <input id="inputLastName" type="text" placeholder="last name" />
+          <div class="radio-input-container">
+            <p>Select Your Gender</p>
+            <input type="radio" id="male" value="Mr." name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="Mrs." name="gender" />
+            <label for="female">Female</label>
+          </div>
+          <label for="inputEmail">Your Email</label>
           <input id="inputEmail" type="email" placeholder="email@email.com" />
+          <label for="inputMessage"> Your Message</label>
           <textarea id="inputMessage" placeholder="your message ..."></textarea>
           <button type="submit" class="btn">submit</button>
         </form>
@@ -115,8 +133,8 @@
     <section class="section-center section-personal-info">
       <h3>Contact Info</h3>
       <address>
-        <a href="mailto:john@doe.com">john@doe.com</a><br />
-        <a href="tel:+13115552368">(311) 555-2368</a><br /><br />
+        <a href="mailto:john@doe.com" id="emailLink">john@doe.com</a><br />
+        <a href="tel:+13115552368" id="phoneLink">(311) 555-2368</a><br /><br />
         You may also want to visit me:<br />
         331 E Evelyn Ave<br />
         Mountain View, CA 94041<br />
@@ -127,37 +145,45 @@
     <section class="section-center section-faq">
       <h3>Frequently asked questions</h3>
 
-      <div class="accordion">
-        <div class="accordion-item">
-          <a class="accordion-link">How do I get started?</a>
+      <ul class="accordion">
+        <li class="accordion-item">
+          <span class="accordion-link">How do I <b>get started?</b></span>
           <div class="accordion-content">
             <p>
-              Contact me through the form or use the contact info and I will get
-              back to you asap.
+              <i
+                >Contact me through the form or use the contact info and I will
+                get back to you asap.</i
+              >
             </p>
           </div>
-        </div>
-        <div class="accordion-item">
-          <a class="accordion-link"
-            >How long does it take to create my website?</a
-          >
+        </li>
+        <li class="accordion-item">
+          <span class="accordion-link">
+            <b>How long</b> does it take to create my website?
+          </span>
           <div class="accordion-content">
             <p>
-              It depends on your personal requirements but usually it can take
-              up to 2 weeks.
+              <i
+                >It depends on your personal requirements but usually it can
+                take up to 2 weeks.</i
+              >
             </p>
           </div>
-        </div>
-        <div class="accordion-item">
-          <a class="accordion-link">How much does a website cost?</a>
+        </li>
+        <li class="accordion-item">
+          <span class="accordion-link">
+            <b>How much</b> does a website cost?
+          </span>
           <div class="accordion-content">
             <p>
-              Like above, it depends on your requirements. Usually prices start
-              from $500.
+              <i
+                >Like above, it depends on your requirements. Usually prices
+                start from $500.</i
+              >
             </p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <footer class="global-footer">
@@ -167,6 +193,7 @@
             href="https://www.facebook.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="facebookLinkFooter"
           >
             <i class="fa-brands fa-facebook"></i>
           </a>
@@ -176,6 +203,7 @@
             href="https://www.linkedin.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="linkedInLinkFooter"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -185,6 +213,7 @@
             href="https://github.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="githubLinkFooter"
           >
             <i class="fa-brands fa-github"></i>
           </a>

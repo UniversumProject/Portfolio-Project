@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haki Bejtullahi</title>
+    <title>John Doe | Main</title>
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -40,7 +40,7 @@
     <header class="header">
       <nav class="nav">
         <div class="nav-top">
-          <a href="index.html">
+          <a href="index.html" id="mainPage">
             <img
               src="./plugins/logo/mylogo.svg"
               alt="logo"
@@ -53,16 +53,20 @@
         </div>
         <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" id="mainPageNav" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" id="aboutPageNav" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" id="projectsPageNav" href="projects.html"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" id="contactsPageNav" href="contact.html"
+              >Contact</a
+            >
           </li>
           <li class="nav-item-bottom">
             <ul class="nav-footer">
@@ -71,6 +75,7 @@
                   href="https://www.facebook.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="facebookLink"
                 >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
@@ -80,6 +85,7 @@
                   href="https://www.linkedin.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="linkedInPage"
                 >
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -89,6 +95,7 @@
                   href="https://github.com"
                   class="nav-footer-link btn-icon"
                   target="_blank"
+                  id="githubId"
                 >
                   <i class="fa-brands fa-github"></i>
                 </a>
@@ -104,7 +111,9 @@
           <h1 class="banner-name">John Doe</h1>
           <h2 class="banner-proffesion"><u>Front End Developer</u></h2>
 
-          <a href="./projects.html" class="btn">my projects</a>
+          <a href="./projects.html" id="projectsPageBtn" class="btn"
+            >my projects</a
+          >
         </div>
       </div>
     </header>
@@ -112,7 +121,9 @@
       <h2 class="section-title">
         About <span class="section-titleSpan">ME</span>
       </h2>
-      <h3>Programming <mark>Languages</mark> / <mark>Frameworks</mark></h3>
+      <h3 align="left">
+        Programming <mark>Languages</mark> / <mark>Frameworks</mark>
+      </h3>
       <div class="table-container">
         <table>
           <tr>
@@ -124,7 +135,7 @@
           <tr>
             <td colspan="2">HTML/CSS</td>
             <td><sup>4</sup> / <sub>5</sub></td>
-            <td>5</td>
+            <td>4</td>
           </tr>
           <tr>
             <td colspan="2">bootstrap</td>
@@ -134,7 +145,7 @@
           <tr>
             <td colspan="2">javascript</td>
             <td><sup>4</sup> / <sub>5</sub></td>
-            <td>5</td>
+            <td>4</td>
           </tr>
           <tr>
             <td colspan="2">React</td>
@@ -143,15 +154,38 @@
           </tr>
         </table>
       </div>
-      <a href="about.html" class="btn">Learn more</a>
+      <a href="about.html" id="aboutPageBtn" class="btn">Learn more</a>
     </section>
     <section class="section-center contact-center">
       <h2>contact <span>me</span></h2>
       <div class="form-container">
         <form class="contact-form" id="contact-form">
+          <label for="inputFirstName">Your First Name</label>
           <input id="inputFirstName" type="text" placeholder="first name" />
+          <label for="inputLastName">Your Last Name</label>
           <input id="inputLastName" type="text" placeholder="last name" />
+          <div class="radio-input-container">
+            <p>Select Your Gender</p>
+            <input
+              type="radio"
+              required
+              id="maleRad"
+              value="Mr."
+              name="gender"
+            />
+            <label for="maleRad">Male</label>
+            <input
+              type="radio"
+              required
+              id="femaleRad"
+              value="Mrs."
+              name="gender"
+            />
+            <label for="femaleRad">Female</label>
+          </div>
+          <label for="inputEmail">Your Email Address</label>
           <input id="inputEmail" type="email" placeholder="email@email.com" />
+          <label for="inputMessage">Your Message</label>
           <textarea id="inputMessage" placeholder="your message ..."></textarea>
           <button type="submit" class="btn">submit</button>
         </form>
@@ -166,6 +200,7 @@
             href="https://www.facebook.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="facebookLinkFooter"
           >
             <i class="fa-brands fa-facebook"></i>
           </a>
@@ -175,6 +210,7 @@
             href="https://www.linkedin.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="linkedInPageFooter"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
@@ -184,6 +220,7 @@
             href="https://github.com"
             class="nav-footer-link btn-icon"
             target="_blank"
+            id="githubPageFooter"
           >
             <i class="fa-brands fa-github"></i>
           </a>
