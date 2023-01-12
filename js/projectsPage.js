@@ -5,7 +5,7 @@ const searchInput = document.querySelector('#searchForm input');
 searchInput.addEventListener('keyup', (e) => {
   const searchValue = e.currentTarget.value;
   const newProjects = projects.filter((item) =>
-    item.name.includes(searchValue)
+    item.name.includes(searchValue.toLowerCase())
   );
 
   document.querySelector('.projects-container').innerHTML = newProjects

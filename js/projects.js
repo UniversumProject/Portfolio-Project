@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 'project03',
-    name: 'Backroad Tour',
+    name: 'backroad tour',
     url: 'https://backroadtourcompanyhaki.netlify.app',
     languages: ['html', 'css', 'javascript'],
     imgPath: './plugins/projectImages/project003.png',
@@ -29,21 +29,21 @@ const projects = [
   },
   {
     id: 'project05',
-    name: 'Vip Scent',
+    name: 'vip scent',
     url: 'https://universumproject.netlify.app',
     languages: ['html', 'css', 'js'],
     imgPath: './plugins/projectImages/project005.png',
   },
   {
     id: 'project06',
-    name: 'Markdown Preview',
+    name: 'markdown preview',
     url: 'https://markdownpreviewreact.netlify.app',
     languages: ['react js'],
     imgPath: './plugins/projectImages/project006.png',
   },
   {
     id: 'project07',
-    name: 'Contacts List',
+    name: 'contacts list',
     url: 'https://cool-starlight-528c9d.netlify.app/',
     languages: ['react js'],
     imgPath: './plugins/projectImages/project007.png',
