@@ -41,6 +41,13 @@ const projects = [
     languages: ['react js'],
     imgPath: './plugins/projectImages/project006.png',
   },
+  {
+    id: 'project07',
+    name: 'Contacts List',
+    url: 'https://cool-starlight-528c9d.netlify.app/',
+    languages: ['react js'],
+    imgPath: './plugins/projectImages/project007.png',
+  },
 ];
 
 export default projects;

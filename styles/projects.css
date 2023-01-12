@@ -50,12 +50,19 @@
   display: flex;
   flex-direction: column;
   border-radius: var(--radius);
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   transition: var(--transition05);
+}
+.project-box span {
+  display: flex;
+  gap: 1rem;
+}
+.project-box:nth-child(even) span {
+  flex-direction: row-reverse;
 }
 .project-box:hover {
   transform: scale(1.03);

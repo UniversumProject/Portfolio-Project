@@ -14,18 +14,20 @@ searchInput.addEventListener('keyup', (e) => {
 
       return `        <a href="${url}" class="project-box" id='${id}' target="_blank">
    <h4 class="project-title">${name}</h4>
+   <span>
    <img
    src="${imgPath}"
    alt="${name}"
    />
-            <div class="box-footer">
-            <ul class="projects-lang">
-            ${languages
-              .map((item) => {
-                return `<li>${item}</li>`;
-              })
-              .join('')}
-             </ul>
+   <div class="box-footer">
+   <ul class="projects-lang">
+   ${languages
+     .map((item) => {
+       return `<li>${item}</li>`;
+     })
+     .join('')}
+    </ul>
+    </span>
              </div>
              </a>`;
     })
@@ -36,18 +38,20 @@ searchInput.addEventListener('keyup', (e) => {
 
       return `        <a href="${url}" class="project-box" id='${id}' target="_blank">
    <h4 class="project-title">${name}</h4>
+   <span>
    <img
    src="${imgPath}"
    alt="${name}"
    />
-            <div class="box-footer">
-            <ul class="projects-lang">
-            ${languages
-              .map((item) => {
-                return `<li>${item}</li>`;
-              })
-              .join('')}
-             </ul>
+   <div class="box-footer">
+   <ul class="projects-lang">
+   ${languages
+     .map((item) => {
+       return `<li>${item}</li>`;
+     })
+     .join('')}
+    </ul>
+    </span>
              </div>
              </a>`;
     });
