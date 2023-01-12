@@ -431,18 +431,15 @@ header
   }
 }
 @keyframes animBanner {
-  0%,
-  20% {
-    transform: translateX(100vw);
+  0% {
+    transform: translateX(-100vw);
   }
-  70%,
-  80% {
-    transform: translateX(0) rotate(720deg);
+  50% {
+    transform: translateX(-50vw) rotate(720deg);
     box-shadow: -5px 5px 0 5px var(--clr-prim-3);
   }
-  80%,
   100% {
-    transform: scale(1) rotate(1440deg);
+    transform: translateX(0) rotate(1440deg);
   }
 }
 /* 
@@ -488,6 +485,13 @@ main page about
   margin-bottom: 2rem;
   display: inline-block;
 }
+.alert {
+  background-color: var(--clr-redDark);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 0.5em 1em;
+  margin-bottom: 3rem;
+}
 /* 
 contact-center
  */
@@ -529,7 +533,6 @@ contact-center
 }
 .section-faq h3 {
   text-align: center;
-
 }
 .accordion {
   padding: 0 24px 40px;
@@ -551,7 +554,6 @@ contact-center
   text-decoration: none;
   transition: all 0.2s ease;
 }
-
 
 .accordion-content {
   padding: 0 16px;
