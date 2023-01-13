@@ -219,6 +219,19 @@ global classes
   color: var(--clr-prim-5);
   font-size: 5rem;
 }
+#adminLink {
+  color: var(--clr-prim-1);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing02);
+  font-weight: bolder;
+  border: 2px solid var(--clr-prim-3);
+  border-radius: var(--radius);
+  padding: 0.2em 0.5em;
+  transition: var(--transition05);
+}
+#adminLink:hover {
+  box-shadow: var(--shadow-light);
+}
 /* 
 =========
 header

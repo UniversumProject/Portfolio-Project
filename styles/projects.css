@@ -52,26 +52,34 @@
   border-radius: var(--radius);
   padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 2rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
   transition: var(--transition05);
+  box-shadow: var(--shadow-light);
+  min-height: 400px;
 }
 .project-box span {
   display: flex;
   gap: 1rem;
 }
+.project-box img {
+  width: 50%;
+}
+
 .project-box:nth-child(even) span {
   flex-direction: row-reverse;
 }
 .project-box:hover {
   transform: scale(1.03);
+  box-shadow: var(--shadow-dark);
 }
 .project-title {
   color: var(--clr-prim-1);
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 0.5em;
+  text-decoration: underline;
 }
 .project-box img {
   border-radius: var(--radius);

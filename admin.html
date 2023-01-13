@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe |Admin</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>John Doe | About</title>
+        <!-- favicon -->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="./plugins/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./plugins/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./plugins/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./plugins/favicon/site.webmanifest" />
+        <!-- link fontawesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <!-- google fonts -->
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap');
+          #section-admin {
+            min-height: calc(100vh - 62px - 80px);
+            max-width: 95vh;
+            margin: 0 auto;
+            padding-top: 5rem;
+          }
+          #admin-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+          }
+          #admin-form input {
+            border: 2px solid var(--clr-prim-5);
+            border-radius: var(--radius);
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+          }
+          #tableChangeForm {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+          }
+          #tableChangeForm span {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+          }
+          .adminContainer {
+            display: none;
+          }
+        </style>
+        <!-- main styles css -->
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <script defer type="module" src="./js/index.js"></script>
+      </head>
+      <body>
+        <header class="header">
+          <nav class="nav">
+            <div class="nav-top">
+              <a href="index.html" id="mainPage">
+                <img
+                  src="./plugins/logo/mylogo.svg"
+                  alt="logo"
+                  style="width: 100px; height: 40px"
+                />
+              </a>
+              <button class="btn-icon btn-navToggle">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a class="nav-link" id="mainPageNav" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="aboutPageNav" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="projectsPageNav" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contactsPageNav" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item-bottom">
+                <ul class="nav-footer">
+                  <li>
+                    <a
+                      href="https://www.facebook.com"
+                      class="nav-footer-link btn-icon"
+                      target="_blank"
+                      id="facebookLinkNav"
+                    >
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com"
+                      class="nav-footer-link btn-icon"
+                      target="_blank"
+                      id="linkedInLinkNav"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com"
+                      class="nav-footer-link btn-icon"
+                      target="_blank"
+                      id="githubLinkNav"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main id="section-admin">
+          <form id="admin-form">
+            <input type="text" placeholder="username" />
+            <input type="password" placeholder="password" />
+            <button type="submit" class="btn">submit</button>
+          </form>
+
+          <div class="adminContainer">
+            <h2 style="text-align: center">Wellcome John, to your portfolio</h2>
+
+            <form id="tableChangeForm">
+              <span>
+                <label htmlFor="langInput">Programming language</label>
+                <input type="text" id="langInput" placeholder="node js" />
+              </span>
+              <span>
+                <label htmlFor="skillExp">Skill evaluation</label>
+                <input
+                  type="number"
+                  id="skillExp"
+                  min="0"
+                  max="5"
+                  placeholder="1"
+                />
+              </span>
+              <span>
+                <label htmlFor="projectsNum">Number of projects</label>
+                <input type="number" id="projectNum" placeholder="1" />
+              </span>
+              <button type="submit" class="btn">add language</button>
+            </form>
+          </div>
+        </main>
+        <footer class="global-footer">
+          <ul class="nav-footer">
+            <li>
+              <a
+                href="https://www.facebook.com"
+                class="nav-footer-link btn-icon"
+                target="_blank"
+                id="facebookLinkFooter"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com"
+                class="nav-footer-link btn-icon"
+                target="_blank"
+                id="linkedInLinkFooter"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com"
+                class="nav-footer-link btn-icon"
+                target="_blank"
+                id="githubLinkFooter"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <a href="admin.html" id="adminLink">admin</a>
+          <p class="copyright">
+            Copyright &copy; John Doe 2023. All rights reserved.
+          </p>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>
